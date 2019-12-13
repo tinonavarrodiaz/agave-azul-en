@@ -1,0 +1,40 @@
+-let images = ['Destileria1.jpg','Destileria2.jpg','Destileria3.jpg','Destileria4.jpg','Destileria5.jpg',]
+section.section.destileria#destileria
+  article.destileria__banner.section__banner.bannerSlider#bannerSlider
+    each img,i in images
+      if i===0
+        img(src=`img/${img}` alt=img).active
+      else
+        img(src=`img/${img}` alt=img)
+    //img(src="img/Landscape.jpg" alt="paisaje")
+  article.section__content
+    .section__text.nosotros__text
+      p 
+      p.section__title Process
+      .section__group
+        p.section__subtitle CROP
+        p The agave plant (tequilana weber variedad azul) begins its cultivation process with small agave plants, that are separate from a mother plant and grow until they reach full maturity between 5 to 7 years. During this time cultivation work is carried out, clean of weeds and care so that it is not attacked by pests or diseases.
+      .section__group
+        p.section__subtitle Jima
+        p Once the plant has matured and reached its optimum level of sugars, it can be cropped, meaning the leaves are cut and the pineapple or heart is extracted from it.
+      .section__group
+        p.section__subtitle Cooking  
+        p Pineapples or agave hearts are cut and placed in ovens (mamposteo - autoclaves) for cooking by injecting steam where carbohydrates are converted into sugars.
+        p This process can take 36 to 40 hours in a mamposteo oven and 8 to 12 hours in an autoclave oven.
+
+      .section__group
+        p.section__subtitle MILLING
+        p At this stage, cooked agaves are passed through mills, where the juice and sugars are extracted from the agave. To facilitate such extraction and avoid loss of sugars in the fiber, pressurized water is injected directly into the fiber.
+      .section__group
+        p.section__subtitle FERMENTATION
+        p The juice and its sugars are collected in vats, where with the help of yeasts and nutrients they become alcohol thanks to the fermentation process, which lasts approximately 48 to 72 hours.
+      .section__group
+        p.section__subtitle DISTILLATION
+        p The fermented juice is distilled 2 times using stainless steel stills.
+        p The first distillation (destruction) a liquid called "ordinary tequila" is obtained.
+        p The second distillation (rectification) allows raising the alcoholic strength and obtaining a product called Tequila.
+
+      .section__group
+        p.section__subtitle MATURATION
+        p The Tequila obtained is deposited in white oak barrels to obtain the desired maturation, depending on how long the Tequila is in the barrel can be called Reposado, Añejo or Extra Añejo.
+    img(src="img/arrowDown.svg" alt="").arrowdown
