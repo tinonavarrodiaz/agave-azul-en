@@ -26,11 +26,11 @@ const createModal = data => {
                   <h2>${data.namemodal1}</h2>
                   <p><span>Color:</span> ${data.color}</p>
                   <p><span>Aroma:</span> ${data.aroma}</p>
-                  <p><span>Body:</span> ${data.cuerpo}</p>
-                  <p><span>Taste:</span> ${data.sabor}</p>
-                  <p><span>Taninis:</span> ${data.taninos}</p>
+                  <p><span>Cuerpo:</span> ${data.cuerpo}</p>
+                  <p><span>Sabor:</span> ${data.sabor}</p>
+                  <p><span>Taninos:</span> ${data.taninos}</p>
                   <p>${data.alc} Alc. Vol.</p>
-                  <p class="fichaTecnica"><a href="assets/pdf/${data.pdf}" target="_blank">Data Sheet</a></p>
+                  <p class="fichaTecnica"><a href="assets/pdf/${data.pdf}" download="${data.pdf}">Data Sheet</a></p>
                   <ul class="tequila-modal__social-network">
                       <li><a href="${data.facebook}" target="_blank"><img src="img/facebook.svg" alt=""></a></li>
                       <li><a href="${data.instagram}" target="_blank"><img src="img/instagram.svg" alt=""></a></li>
@@ -53,11 +53,11 @@ const createModal = data => {
                   <h2>${data.namemodal1}</h2>
                   <p><span>Color:</span> ${data.color}</p>
                   <p><span>Aroma:</span> ${data.aroma}</p>
-                  <p><span>Body:</span> ${data.cuerpo}</p>
-                  <p><span>Taste:</span> ${data.sabor}</p>
-                  <p><span>Taninis:</span> ${data.taninos}</p>
-                  <p>${data.alc} Alc. Vol.</p>
-                  <p class="fichaTecnica"><a href="assets/pdf/${data.pdf}" target="_blank">Data Sheet</a></p>
+                  <p><span>Cuerpo:</span> ${data.cuerpo}</p>
+                  <p><span>Sabor:</span> ${data.sabor}</p>
+                  <p><span>Taninos:</span> ${data.taninos}</p>
+                  <p>${data.alc} Alc. Vol.</p>            
+                  <p class="fichaTecnica"><a href="assets/pdf/${data.pdf}" download="${data.pdf}">Data Sheet</a></p>
               </div>
           </div>
       </div>
@@ -70,6 +70,8 @@ const createModal = data => {
   document.body.appendChild(modal);
   document.body.appendChild(arrowDown);
   const modalClose = modal.querySelector(".close-modal");
+  let linkNull = modal.querySelector("a[href='assets/pdf/null'");
+  if (linkNull) linkNull.remove();
   modalClose.addEventListener("click", e => {
     modal.remove();
     arrowDown.remove();

@@ -36,7 +36,7 @@ export const sliderTequilas = (gallery, isMobile) =>{
   const itemsTotal = items.length
   const dd = document.documentElement
   const widthItem = items[0].clientWidth
-  const maxPos = isMobile? widthItem * 7 : widthItem * 3
+  const maxPos = isMobile? widthItem * 9 : widthItem * 5
   // console.log(widthItem, maxPos)
   next.addEventListener('click', e=>{
     let pos = parseInt(getComputedStyle(dd).getPropertyValue('--tequilasSliderPos'))
