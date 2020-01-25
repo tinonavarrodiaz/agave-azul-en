@@ -24,11 +24,12 @@ const createModal = data => {
                   <button class="icon-close close-modal">X</button>
                   <h2>${data.namemodal}</h2>
                   <h2>${data.namemodal1}</h2>
+                  <p>${data.description}</p>
                   <p><span>Color:</span> ${data.color}</p>
                   <p><span>Aroma:</span> ${data.aroma}</p>
-                  <p><span>Cuerpo:</span> ${data.cuerpo}</p>
-                  <p><span>Sabor:</span> ${data.sabor}</p>
-                  <p><span>Taninos:</span> ${data.taninos}</p>
+                  <p><span>Body</span> ${data.cuerpo}</p>
+                  <p><span>Taste:</span> ${data.sabor}</p>
+                  <p><span>Tannins:</span> ${data.taninos}</p>
                   <p>${data.alc} Alc. Vol.</p>
                   <p class="fichaTecnica"><a href="assets/pdf/${data.pdf}" download="${data.pdf}">Data Sheet</a></p>
                   <ul class="tequila-modal__social-network">
@@ -51,11 +52,12 @@ const createModal = data => {
                   <button class="icon-close close-modal">X</button>
                   <h2>${data.namemodal}</h2>
                   <h2>${data.namemodal1}</h2>
+                  <p>${data.description}</p>
                   <p><span>Color:</span> ${data.color}</p>
                   <p><span>Aroma:</span> ${data.aroma}</p>
-                  <p><span>Cuerpo:</span> ${data.cuerpo}</p>
-                  <p><span>Sabor:</span> ${data.sabor}</p>
-                  <p><span>Taninos:</span> ${data.taninos}</p>
+                  <p><span>Body</span> ${data.cuerpo}</p>
+                  <p><span>Taste:</span> ${data.sabor}</p>
+                  <p><span>Taninnis:</span> ${data.taninos}</p>
                   <p>${data.alc} Alc. Vol.</p>            
                   <p class="fichaTecnica"><a href="assets/pdf/${data.pdf}" download="${data.pdf}">Data Sheet</a></p>
               </div>
